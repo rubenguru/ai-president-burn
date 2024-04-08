@@ -1,0 +1,316 @@
+.container {
+  background-color: rgb(204, 255, 195);
+  border-radius: 20px 20px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+  border: solid 1px #77fa60;
+  width: 100%;
+  gap: 20px;
+  /* Adjusted to include border styling */
+}
+
+.header h1,
+.description p,
+.button p {
+  text-align: center;
+  font-family: Satoshi, sans-serif;
+}
+
+.header h1 {
+  font-weight: 900;
+  font-size: 64px;
+  color: rgb(33, 48, 70);
+  line-height: 76.8px;
+  margin: 0;
+}
+
+.description p {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(33, 48, 70);
+  line-height: 19.2px;
+  margin: 0;
+  width: 714px;
+  /* Kept the width to wrap text as in the original style */
+}
+
+.description p span {
+  font-weight: 900;
+}
+
+.button {
+  background-color: rgb(144, 222, 255);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49.1875px;
+  padding: 15px 30px;
+  border: solid 1px #41a9d5;
+}
+
+.utility-container {
+  opacity: 1;
+  background-color: rgb(204, 255, 195);
+  border-radius: 0 0 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  border: solid 1px #77fa60;
+  width: 100%;
+}
+
+.vote-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.columns-text-image {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 16px;
+}
+
+.vote-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai-tremp {
+  color: rgb(232, 106, 101);
+}
+
+.ai-boden {
+  color: rgb(105, 138, 242);
+}
+
+.ai-tremp p,
+.ai-boden p {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.vote-percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.red,
+.blue {
+  transition: width 0.5s ease-in-out;
+  /* Animation effect */
+  height: 50px;
+  /* Example height */
+  line-height: 50px;
+  /* Align text vertically */
+  text-align: center;
+  /* Align text horizontally */
+}
+
+.red {
+  background-color: rgb(232, 106, 101);
+  color: rgb(245, 245, 245);
+  width: 50%;
+  border-radius: 20px 0 0 20px;
+}
+
+.blue {
+  background-color: rgb(105, 138, 242);
+  color: rgb(245, 245, 245);
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+}
+
+.redText {
+  color: rgb(232, 106, 101);
+}
+
+.blueText {
+  color: rgb(105, 138, 242);
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  /* Adjust layout to column for these elements */
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stat-item-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-item img {
+  width: auto;
+  height: 250px;
+}
+
+.tokens-burned,
+.amount {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.coming-soon {
+  font-size: 41px;
+}
+
+.vote-stats {
+  width: 90%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.description p {
+  font-size: 20px;
+  line-height: 26px;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1126px) {
+
+  .header h1 {
+    font-size: 30px;
+    /* Smaller font size for headers */
+    line-height: 36px;
+    margin: 10px 0;
+    /* Reduced margin */
+  }
+
+  .description p {
+    font-size: 14px;
+    /* Smaller font size for text */
+    line-height: 16px;
+    width: 100%;
+    /* Allow text to adjust according to container size */
+    padding: 0 20px;
+    /* Add padding for text to not touch the edges */
+  }
+
+  .container,
+  .utility-container {
+    padding-top: 10px;
+    /* Reduced padding for smaller screens */
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .candidate {
+    width: 100%;
+    /* Full width for better use of space */
+
+  }
+
+  .vote-input,
+  .cta-button {
+    width: 90%;
+    /* Make buttons and inputs wider to fit screen */
+    font-size: 14px;
+    /* Adjust font size for better readability */
+  }
+
+  .stats {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    /* Adjust layout to column for these elements */
+  }
+
+  .stat-item img {
+    width: auto;
+    height: 150px;
+    /* Smaller images for stats */
+  }
+
+  .vote-line {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* Adjust layout to column for these elements */
+    gap: 10px;
+  }
+
+  .vote-line {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+  }
+
+  .red,
+  .blue {
+    font-size: 16px;
+  }
+
+  .column-text,
+  .vote-percentage {
+    width: 100%;
+    /* Full width for better layout */
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .stats {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .ai-tremp p,
+  .ai-boden p {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .container {
+    gap: 0px;
+    /* Adjusted to include border styling */
+  }
+
+  .main-container {
+    gap: 0px;
+  }
+}

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fbfbfb;
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  /* Set Satoshi font here */
+  font-family: 'Satoshi', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  color: #213046;
+  position: relative;
+} */
+
+.authed-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.header-container {
+  /* background-color: #60c657; */
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 25px;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.connect-wallet-button {
+  color: white;
+  background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.mint-button {
+  width: 100%;
+  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  /* padding-bottom: 45px; */
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connected-container input[type="text"] {
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.connected-container button {
+  height: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}
+
+.candidate {
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate button {
+  margin-top: 20px;
+}
+
+.candidate label {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.vote-input {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Satoshi', sans-serif;
+}
+
+.votesFor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1126px) {
+  .App {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .container {
+    padding: 5% 10%;
+    /* Increase padding for smaller devices */
+  }
+
+  .description p {
+    width: auto;
+    /* Allow text to flow naturally */
+    padding: 0 15px;
+    /* Add some padding on the sides */
+  }
+
+  .header h1 {
+    font-size: 48px;
+    /* Smaller text for smaller screens */
+    line-height: 1.2;
+    /* Adjust line height for readability */
+  }
+
+  .button,
+  .utility-container,
+  .vote-stats,
+  .vote-line {
+    flex-direction: column;
+    /* Stack elements vertically on smaller screens */
+  }
+
+  .vote-line {
+    flex-direction: row;
+    /* Stack elements vertically on smaller screens */
+  }
+
+  .stat-item {
+    flex-direction: column;
+    /* Adjust layout for stats */
+    /* Reduce gap */
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 32px;
+    /* Even smaller text for very small devices */
+  }
+
+  .description p {
+    font-size: 14px;
+    /* Smaller font size for descriptions */
+  }
+
+  .button {
+    padding: 10px 20px;
+    /* Adjust button padding */
+  }
+
+  .stat-item img {
+    height: 150px;
+    /* Smaller images for smaller screens */
+  }
+}
+
+/* Ensure images and other media scale correctly */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Additional responsive adjustments can be added as needed */
+
+.wallet-adress {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  /* Add some padding */
+}
+
+.wallet-adress pre {
+  white-space: pre-wrap;
+  /* Allow the pre text to wrap */
+  word-break: break-word;
+  /* Break the word to prevent overflow */
+  text-align: center;
+  /* Center align the text */
+}
+
+.wallet-address {
+  /* Make the span inline-block */
+  max-width: 100%;
+  /* Max width to 100% of its parent */
+  overflow: hidden;
+  /* Hide overflow */
+  text-overflow: ellipsis;
+  /* Show ellipsis (...) for overflowed content */
+}
+
+@media (max-width: 1050px) {
+  .wallet-address {
+    font-size: 14px;
+    /* Smaller font size on small screens */
+  }
+}

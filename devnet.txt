@@ -1,0 +1,13 @@
+➜ spl-token create-token
+Creating token 9sX68oTiAJSrmWtMeJY3CjfDjc22LQ7QveqKJzcHigMX under program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+
+Address:  9sX68oTiAJSrmWtMeJY3CjfDjc22LQ7QveqKJzcHigMX
+Decimals:  9
+
+Signature: 5XiF2JCcjzT85cWrA1jpQ6RejnU5rVtB4dm7QKBqY2WRYkZtGoay9jvypmPvjUm5BkgLoNpQ1FSKM4nVSjAbiJoF
+
+➜ spl-token create-account 9sX68oTiAJSrmWtMeJY3CjfDjc22LQ7QveqKJzcHigMX
+Creating account 35EdVSzACNMGxrTuE48CKcsJfxesQon7arD1wZqEgVMD
+
+Signature: 3fRK9HRhWYABgdjzaqA3BSKXyyGSt8n4qtzRwFfic4j2wZwTkpSkYupjYHaq3nbfaFcdJFETm2fKJgp4pn5h85ja
+
